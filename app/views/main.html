@@ -1,11 +1,14 @@
 <div class="jumbotron">
-  <h1 class="display-3">Hello, {{userName}}!</h1>
-  <p class="main">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="main">
-    <a class="btn btn-lg btn-success" ng-href="#/">Login<span class="glyphicon glyphicon"></span></a>
-  </p>
-  <p>
-    <a class="btn btn-lg btn-success" ng-href="#/">Create New Employee<span button="glyphicon glyphicon"></span></a>
-  </p>
+
+  <h1>Hello!</h1>
+  <h4>Login or Sign-up</h4>
+
+  <p id ="error">{{error}}</p>
+
+  <p>Username: <input ng-model="user_name" type=text></input></p>
+  <p>Password: <input ng-model="password" type=text></input></p>
+
+  <button class="btn btn-lg btn-success" ng-click="addUser()">New User</button>
+  <button class="btn btn-lg btn-success" ng-click="login()">Returning User</button>
+
 </div>

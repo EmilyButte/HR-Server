@@ -1,0 +1,19 @@
+<div class="jumbotron">
+
+  <h1>Hello, {{name}}!</h1>
+  <h4>Submit or View Time Cards</h4>
+
+  <p ng-model = "error">{{error}}</p>
+
+  <p>Start Time: <input id="start" type=time></input></p>
+  <p>End Time: <input id="end" type=time></input></p>
+
+  <button class="btn btn-lg btn-success" ng-click="submitTimeCards()">Submit TIme Cards</button>
+  <button class="btn btn-lg btn-success" ng-click="getTimeCards()">View Time Cards</button>
+
+  <div class="timecards" ng-repeat="timecard in timecards">
+    <p>Start Time: {{timecard.startTime}}</p>
+    <p>End Time: {{timecard.endTime}}</p>
+  </div>
+
+</div>
